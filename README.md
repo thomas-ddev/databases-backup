@@ -1,6 +1,5 @@
 # databases-backup
 
-# simple-monitoring-script
 ## C'est quoi ?
 Ce script permet de créer une backup de toutes les BDD présentes sur un serveur MySQL
 
