@@ -34,6 +34,6 @@ find $TMPBACKUP -mtime +5 -exec rm {} \;
 
 # Creer une backup de toutes les BDD en local
 for DB in $(mysql -u $MYSQLUSER -p$MYSQLPASSWORD -e 'show databases' -s --skip-column-names); do
-    mysqldump --skip-lock-tables -f -u $MYSQLUSER -p$MYSQLPASSWORD $DB > "$TMPBACKUP$DB-$TIMESTAMP.sql";
+    mysqldump --skip-lock-tables -f -u $MYSQLUSER -p$MYSQLPASSWORD $DB > "$TMPBACKUP/$DB-$TIMESTAMP.sql";
 done
 
