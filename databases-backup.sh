@@ -17,7 +17,7 @@ TIMESTAMP=$(date +%F)
 # Repertoire contenant la backup temporaire
 TMPBACKUP="/var/www/backups/databases"
 
-# Si le repertoire temporaire des backup existe pas, le creer
+# Si le repertoire temporaire des backup n'existe pas, le creer
 if [ ! -d "$TMPBACKUP" ]; then
         mkdir -p $TMPBACKUP
 fi
